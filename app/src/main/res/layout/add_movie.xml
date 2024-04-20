@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="405dp"
+        android:layout_height="353dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="387dp"
+            android:layout_height="353dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="337dp"
+                android:layout_height="43dp"
+                android:layout_marginVertical="20dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/custom_input"
+                android:hint="Movie Title"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="17dp" />
+
+
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="339dp"
+                android:layout_height="75dp"
+                android:layout_marginLeft="22dp"
+                android:paddingStart="12dp"
+                android:layout_marginRight="12dp"
+                android:hint="Description"
+                android:paddingBottom="30dp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_input"
+                android:textSize="17dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:paddingTop="5dp">
+
+                <EditText
+                    android:id="@+id/hours"
+                    android:layout_width="72dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="7dp"
+                    android:hint="Hours"
+                    android:textColorHint="@color/white"
+                    android:paddingEnd="5dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/white"
+                    android:inputType="number"/>
+
+                <EditText
+                    android:id="@+id/mins"
+                    android:layout_width="72dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/custom_input"
+                    android:paddingStart="7dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/white"
+                    android:hint="Mins"
+                    android:textColorHint="@color/white"
+                    android:textSize="17dp"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Cancel"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/doneAdding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="180dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Done"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
